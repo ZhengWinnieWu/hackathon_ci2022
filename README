@@ -1,11 +1,11 @@
 Hackathon CI 2022
-Drought prediction over West Africa: using standardized precipitation index (SPI)
-Instructions from CI2022 Hackathon:
-The goal is to train a model that receives 3 time steps of SPI as input (SPI_t-2, SPI_t-1, SPI_t) and then predicts 1 time step of SPI, but 3 months ahead, SPI_t+3. You do not have to predict SPI_t+1, SPI_t+2 or anything else then SPI_t+3
-The input dimension is time_stepsxlatxlon (3x13x20) and the output dimension is 1xlatxlon.
-To train your model you can use all of the provided CESM data. But to make it work for the task you should learn to predict 3 months ahead given 3 past time steps
-The three months input can be any months of the year. It can be (jan, febr, march) , it can be (jun,jul,aug), it can be (dec, jan, febr)
-For the final evaluation you will use your already trained model and not do any retraining
-We will provide new data, but only the input data and keep the output/target. You will use this new input data to create a prediction and then submit this prediction to us. We will then compare the prediction to the target.
-The new input data will be multiple samples/instances of 3 months of SPI and for each of these samples you will create a prediction (1 time step of SPI 3 months ahead)
+Drought prediction over West Africa: using standardized precipitation index (SPI) \\
+Instructions from CI2022 Hackathon: \\
+The goal is to train a model that receives 3 time steps of SPI as input (SPI_t-2, SPI_t-1, SPI_t) and then predicts 1 time step of SPI, but 3 months ahead, SPI_t+3. You do not have to predict SPI_t+1, SPI_t+2 or anything else then SPI_t+3 \\
+The input dimension is time_stepsxlatxlon (3x13x20) and the output dimension is 1xlatxlon \\
+To train your model you can use all of the provided CESM data. But to make it work for the task you should learn to predict 3 months ahead given 3 past time steps \\
+The three months input can be any months of the year. It can be (jan, febr, march) , it can be (jun,jul,aug), it can be (dec, jan, febr) \\
+For the final evaluation you will use your already trained model and not do any retraining \\
+We will provide new data, but only the input data and keep the output/target. You will use this new input data to create a prediction and then submit this prediction to us. We will then compare the prediction to the target \\
+The new input data will be multiple samples/instances of 3 months of SPI and for each of these samples you will create a prediction (1 time step of SPI 3 months ahead) \\
 Based on the starter_kit python scripts provided by Paula Harder, we use multiple linear regression as a baseline and try to build other ML models that can perform better over the MLR.
