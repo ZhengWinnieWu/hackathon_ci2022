@@ -1,6 +1,7 @@
 Hackathon CI 2022
-Drought prediction over West Africa: using standardized precipitation index (SPI) \\
-Instructions from CI2022 Hackathon: \\
+Drought prediction over West Africa: using standardized precipitation index (SPI)
+
+Instructions from CI2022 Hackathon:
 The goal is to train a model that receives 3 time steps of SPI as input (SPI_t-2, SPI_t-1, SPI_t) and then predicts 1 time step of SPI, but 3 months ahead, SPI_t+3. You do not have to predict SPI_t+1, SPI_t+2 or anything else then SPI_t+3 \\
 The input dimension is time_stepsxlatxlon (3x13x20) and the output dimension is 1xlatxlon \\
 To train your model you can use all of the provided CESM data. But to make it work for the task you should learn to predict 3 months ahead given 3 past time steps \\
